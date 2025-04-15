@@ -1,13 +1,116 @@
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fafafa;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  background: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.account-dropdown {
+  margin: 10px 0;
+}
+
+.transaction-list {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff6f6;
+  padding: 15px;
+  border-bottom: 1px solid #f2e8e8;
+}
+
+.plus-icon {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.amount {
+  text-align: right;
+  font-size: 20px;
+}
+
+.view-all {
+  background-color: #b4aaff;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.view-all span {
+  margin-right: 10px;
+}
+
+/* All Transactions Styles */
+.all-transactions {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tabs .active {
+  color: #2d2dff;
+  border-bottom: 3px solid #2d2dff;
+}
+
+.tabs .right-links {
+  font-weight: normal;
+  color: #4438fc;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters select,
+.filters input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.table .header,
+.table .row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.credit {
+  color: green;
 }
